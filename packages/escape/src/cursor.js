@@ -6,11 +6,14 @@ export class Cursor {
   static down = (d) => csi(d + 'B')
   static right = (d) => csi(d + 'C')
   static left = (d) => csi(d + 'D')
+  static prevLine = (d) => csi(d + 'E')
+  static nextLine = (d) => csi(d + 'F')
+  static charTo = (d) => csi(d + 'G')
   static QUERY_POS = csi("6n")             // Where is the cursor? Use `ESC [ 6 n`. And answers: `ESC [ Cy ; Cx R`.
-  static HIDE = csi("?25l")                // "Hide the cursor."                              //
   static SHOW = csi("?25h")                // "Show the cursor."                              //
-  static RESTORE = csi("u")                // "Restore the cursor."                           //
+  static HIDE = csi("?25l")                // "Hide the cursor."                              //
   static SAVE = csi("s")                   // "Save the cursor."                              //
+  static RESTORE = csi("u")                // "Restore the cursor."                           //
   static BLINK_BLOCK = csi("\x31 q")       // "Change the cursor style to blinking block"     //
   static STEADY_BLOCK = csi("\x32 q")      // "Change the cursor style to steady block"       //
   static BLINK_UNDERLINE = csi("\x33 q")   // "Change the cursor style to blinking underline" //

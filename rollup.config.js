@@ -5,7 +5,7 @@ import nodeResolve         from '@rollup/plugin-node-resolve'
 import { decoObject, ros } from '@spare/logger'
 import fileInfo            from 'rollup-plugin-fileinfo'
 
-const { name, dependencies, exports, module } = require(process.cwd() + '/package.json')
+const { name, dependencies, exports } = require(process.cwd() + '/package.json')
 
 console.log(ros('Executing'), name, process.cwd())
 console.log(ros('Dependencies'), decoObject(dependencies || {}, { bracket: true }))

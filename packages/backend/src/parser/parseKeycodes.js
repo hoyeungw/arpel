@@ -2,7 +2,7 @@ import {
   BACKSPACE, CLEAR, DELETE, DOWN, END, ENTER, ESCAPE, HOME, INSERT, LEFT, PAGEDOWN, PAGEUP, RETURN, RIGHT, SPACE, TAB, UNDEFINED, UP
 }                                                                 from '@pres/enum-key-names'
 import { acquire }                                                from '@vect/vector-merge'
-import { ANY_ESCAPE_KEYCODE, PRE_FUNC_KEYCODE, PRE_META_KEYCODE } from '../../assets/regex.js'
+import { ANY_ESCAPE_KEYCODE, PRE_FUNC_KEYCODE, PRE_META_KEYCODE } from '../../resources/regex.js'
 import { isMouseCode }                                            from './parseMouse.js'
 
 

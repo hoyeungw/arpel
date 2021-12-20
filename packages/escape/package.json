@@ -1,6 +1,6 @@
 {
   "name": "@arpel/escape",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ANSI escape sequences utils",
   "type": "module",
   "main": "dist/index.cjs",

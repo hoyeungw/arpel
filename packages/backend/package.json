@@ -1,6 +1,6 @@
 {
   "name": "@arpel/backend",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "terminal backend",
   "type": "module",
   "main": "dist/index.cjs",
@@ -15,7 +15,7 @@
     "pub": "npm publish"
   },
   "dependencies": {
-    "@arpel/escape": "^0.0.4",
+    "@arpel/escape": "^0.0.5",
     "@geia/enum-events": "^0.1.5",
     "@geia/enum-signals": "^0.1.5",
     "@pres/enum-events": "^0.3.33",
